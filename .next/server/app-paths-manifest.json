@@ -1,0 +1,4 @@
+{
+  "/page": "app/page.js",
+  "/api/gematria/route": "app/api/gematria/route.js"
+}
