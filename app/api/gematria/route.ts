@@ -4,14 +4,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { calculateGematria } from "@/lib/gematria";
 import { GematriaResult } from "@/lib/gematriaTypes";
 
-// Configure body size limit for large texts (up to 400k characters)
-export const config = {
-    api: {
-        bodyParser: {
-            sizeLimit: '2mb',
-        },
-    },
-};
+// Next.js App Router handles body parsing automatically
+// Default limit is sufficient for our use case (up to 400k characters)
 
 export async function POST(request: NextRequest) {
     try {
